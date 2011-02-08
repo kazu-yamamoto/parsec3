@@ -36,6 +36,8 @@ library
         Text.Parsec.String,
         Text.Parsec.ByteString,
         Text.Parsec.ByteString.Lazy,
+        Text.Parsec.Text,
+        Text.Parsec.Text.Lazy,
         Text.Parsec.Pos,
         Text.Parsec.Error,
         Text.Parsec.Prim,
@@ -45,6 +47,6 @@ library
         Text.Parsec.Expr,
         Text.Parsec.Language,
         Text.Parsec.Perm
-    build-depends: base >= 4 && < 5, mtl, bytestring
+    build-depends: base >= 4 && < 5, mtl, bytestring, text
     extensions: DeriveDataTypeable, PolymorphicComponents, FlexibleInstances,
         MultiParamTypeClasses, FlexibleContexts
